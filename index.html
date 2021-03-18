@@ -17,7 +17,7 @@
                 <div class="row justify-content-center mb-4">
                     <div class="internxpo_head">
                         <h1>InternXpo 2021</h1>
-                        <h2 class="text-center mt-3 h1">March 19</h2>
+                        <h2 class="text-center mt-3 h1">March 19 - 9:00am</h2>
                     </div>
                 </div>
                 <div class="row justify-content-center mb-4">
@@ -161,15 +161,6 @@
             .then(response => alert("Thank you for reaching out to us. We will get back to you soon."))
                 .catch(error => console.error( error.message))
                 document.getElementById("contactform").reset();
-        })
-        const registerURL = 'https://script.google.com/macros/s/AKfycbxTl6KWDLnlgQhxOaDk6GbB0VpNNV_36SM5ryHPGzoNqKser2wRJYpy/exec'
-        const registerForm = document.forms['registrationform']
-        registerForm.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(registerURL, { method: 'POST', body: new FormData(registerForm)})
-            .then(response => alert("Your registration has been recorded! Stay tuned to your inbox for further updates."))
-                .catch(error => console.error( error.message))
-                document.getElementById("registrationform").reset();
         })
     </script>
     <script src="./assets/script/script.js"></script>
